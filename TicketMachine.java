@@ -1,18 +1,19 @@
 /**
- * TicketMachine models a naive ticket machine that issues
- * flat-fare tickets.
- * The price of a ticket is specified via the constructor.
- * It is a naive machine in the sense that it trusts its users
- * to insert enough money before trying to print a ticket.
- * It also assumes that users enter sensible amounts.
+
+* Los modelos TicketMachine una máquina expendedora de billetes ingenua que las cuestiones
+ * Boletos de tarifa plana.
+ * El precio de un billete se especifica mediante el constructor.
+ * Es una máquina ingenua en el sentido de que confía en sus usuarios
+ * Para insertar dinero suficiente antes de intentar imprimir un boleto.
+ * También se supone que los usuarios entran en cantidades razonables.
  *
  * @author David J. Barnes and Michael KÃ¶lling
  * @version 2011.07.31
  */
 public class TicketMachine
 {
-    // The price of a ticket from this machine.
-    private int price;
+    // El precio del ticket
+    private int precio;
     // The amount of money entered by a customer so far.
     private int balance;
     // The total amount of money collected by this machine.
@@ -23,9 +24,9 @@ public class TicketMachine
      * Note that the price must be greater than zero, and there
      * are no checks to ensure this.
      */
-    public TicketMachine(int cost)
+    public TicketMachine(int coste)
     {
-        price = cost;
+        precio = coste;
         balance = 0;
         total = 0;
     }
@@ -33,16 +34,16 @@ public class TicketMachine
     /**
      * Return the price of a ticket.
      */
-    public int getPrice()
+    public int damePrecio()
     {
-        return price;
+        return precio;
     }
 
     /**
      * Return the amount of money already inserted for the
      * next ticket.
      */
-    public int getBalance()
+    public int dameBalance()
     {
         return balance;
     }
@@ -50,9 +51,9 @@ public class TicketMachine
     /**
      * Receive an amount of money from a customer.
      */
-    public void insertMoney(int amount)
+    public void introducirDinero (int cantidad)
     {
-        balance = balance + amount;
+        balance = balance + cantidad;
     }
 
     /**
@@ -60,13 +61,13 @@ public class TicketMachine
      * Update the total collected and
      * reduce the balance to zero.
      */
-    public void printTicket()
+    public void imprimirTicket()
     {
         // Simulate the printing of a ticket.
         System.out.println("##################");
         System.out.println("# The BlueJ Line");
         System.out.println("# Ticket");
-        System.out.println("# " + price + " cents.");
+        System.out.println("# " + precio + " cents.");
         System.out.println("##################");
         System.out.println();
 

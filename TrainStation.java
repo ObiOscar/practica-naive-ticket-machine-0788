@@ -4,17 +4,36 @@ public class TrainStation   //Creo una clase de tren estación, no lo traducto po
     private TicketMachine maquina2;
     private int dineroTotal;
 
-    public TrainStation()
+   
+
+    public TrainStation() 
     {
         maquina1 = new TicketMachine(300);
         maquina2 = new TicketMachine(200);
         dineroTotal = 0;
   }
   
-  public void printTotalMoney()
+    /**
+     * Meter dinero.//La máquina1 vale 300 cents, la máquina2 200.//NO DEVUELVE DINERO
+     */
+    public void imprimirBillete ()
+    {
+        maquina1.introducirDinero(300);
+        maquina2.introducirDinero(200);
+        maquina1.imprimirTicket();
+        maquina2.imprimirTicket();
+    }
+  
+  
+  public void imprimirDineroTotal()
     {
         dineroTotal = maquina1.obtenerTotal();
         dineroTotal = dineroTotal + maquina2.obtenerTotal();
     System.out.println(dineroTotal);
     }
+    
+    
+    
+ 
+    
 }

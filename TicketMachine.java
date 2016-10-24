@@ -82,4 +82,13 @@ public class TicketMachine
         return total;
     }
     
+    
+    /*ACTIVIDAD 0233 Me manda hacer:
+       
+       Codifica en BlueJ el método setter llamado setPrice, comprueba que funciona y haz un commit describiendo los cambios.*/
+        public void introducirPreciol(int nuevoPrecio)
+    {
+        precio = nuevoPrecio;
+    }
+    
 }

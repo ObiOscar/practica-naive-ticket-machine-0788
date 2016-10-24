@@ -14,7 +14,7 @@ public class TrainStation   //Creo una clase de tren estación, no lo traducto po
   }
   
     /**
-     * Meter dinero.//La máquina1 vale 300 cents, la máquina2 200.//NO DEVUELVE DINERO
+     * Imprimimos directamente dos billetes, si no nos han pagado pues na....
      */
     public void imprimirBillete ()
     {

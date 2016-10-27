@@ -20,13 +20,19 @@ public class TicketMachine
     private int total;
 
     /**
-     * Create a machine that issues tickets of the given price.
-     * Note that the price must be greater than zero, and there
-     * are no checks to ensure this.
+     * Crecio constructor con un precio fijo de 800.
      */
     public TicketMachine()
     {
         precio = 800;
+        balance = 0;
+        total = 0;
+    }
+    
+    /** Creo un nuevo constructor , ya existia, para que el usuario si quiere introduce el precio del billete*/
+        public TicketMachine(int cost)
+    {
+        precio = cost;
         balance = 0;
         total = 0;
     }

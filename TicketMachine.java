@@ -24,9 +24,9 @@ public class TicketMachine
      * Note that the price must be greater than zero, and there
      * are no checks to ensure this.
      */
-    public TicketMachine(int coste)
+    public TicketMachine()
     {
-        precio = coste;
+        precio = 800;
         balance = 0;
         total = 0;
     }

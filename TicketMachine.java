@@ -91,7 +91,7 @@ public class TicketMachine
         precio = nuevoPrecio;
     }
     
-    public void inmediato()
+    public void imprimirError()
     {
               System.out.println("Por favor, inserta la cantidad de dinero correcta");
     }

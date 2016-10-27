@@ -104,5 +104,14 @@ public class TicketMachine
     
     public void mostrarPrecio()
     {
-        System.out.println("El precio del ticket son " + precio + " €.");    }
+        System.out.println("El precio del ticket son " + precio + " €.");  
+    }
+    
+    /* Obligo a cambiar el valor de TOTAL a 0, simulando un vaciado del dinero ganado */
+    public void vaciarMaquina ()
+    {
+        System.out.println("El dindero de recaudación de hoy son " + total + "€");
+        total = 0;
+        System.out.println("Has vaciado el dinero de la recaudación de hoy, total de dinero que hay ahora mismo "+ total + "€");
+    }
 }
